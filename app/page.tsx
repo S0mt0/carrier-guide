@@ -132,7 +132,7 @@ export default function Home() {
 
   const analyzeWithClaude = async (allAnswers: Answer[]) => {
     try {
-      const response = await fetch("http://localhost:3000/api/analyze", {
+      const response = await fetch("/api/analyze", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
